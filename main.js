@@ -14,6 +14,11 @@ module.exports.loop = function () {
 
   for(const name in Game.creeps) {
     const creep = Game.creeps[name];
+
+    if(!creep.memory.role) {
+      creep.memory.role = roles.harvester;
+    }
+
     creep.memory.role(creep);
   }
 }
