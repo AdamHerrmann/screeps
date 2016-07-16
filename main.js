@@ -1,6 +1,6 @@
 'use strict';
 
-const roleHarvester = require('roles/harvester');
+const roleHarvester = require('role.harvester');
 
 module.exports.loop = function () {
 
